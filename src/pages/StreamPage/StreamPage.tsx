@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import AppHeader from "../../components/Header/AppHeader";
 import { Button } from "@mui/material";
+import { useState } from "react";
 
 
 const StreamPage = () => {
@@ -9,8 +8,7 @@ const StreamPage = () => {
     
     return (
         <div>
-            <AppHeader tab={tab} setTab={setTab} />
-            <Button  onClick={() => setTab("abc")}> click me </Button>
+            <Button onClick={() => setTab("abc")}> click me </Button>
         </div>
     );
 };

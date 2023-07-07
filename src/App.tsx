@@ -1,17 +1,19 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Router, Route, Routes } from 'react-router-dom';
 import StreamPage from './pages/StreamPage/StreamPage';
+import AppHeader from './components/Header/AppHeader';
+import MainPage from './pages/MainPage/MainPage';
 
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path='/' Component={StreamPage} />
-        </Routes>
-      </Router>
+      <AppHeader />
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/streaming' element={<StreamPage />} />
+      </Routes>
     </div>
   );
 }
