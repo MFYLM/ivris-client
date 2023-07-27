@@ -1,32 +1,32 @@
 import { Card, CardMedia, CardActionArea, CardContent, Typography } from "@mui/material";
+import { title } from "process";
 import React, { FC } from "react";
 
 
 interface CardProps {
+    title: string,
     text: string,
     imgPath: string,
+    cardAction: () => void
 };
 
 
-const FeatureCard: FC<CardProps> = ({ text, imgPath }) => {
+const FeatureCard: FC<CardProps> = ({ title, text, cardAction, imgPath }) => {
 
     return (
-        <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea 
-                onClick={() => {
-                    console.log("");
-                }}
+        <Card sx={{ maxWidth: 400 }}>
+            <CardActionArea
+                onClick={cardAction}
             >
                 <CardMedia
                     component="img"
                     height="140"
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    alt="green iguana"
+                    image="../../assets/images/cards/contemplative-reptile.jpg"
+                    alt={title}
                 />
                 <CardContent>
                     <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                        species, ranging across all continents except Antarctica
+                        {text}
                     </Typography>
                 </CardContent>
             </CardActionArea>
