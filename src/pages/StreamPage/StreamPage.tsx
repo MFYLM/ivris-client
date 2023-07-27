@@ -1,17 +1,24 @@
-import React, { useState } from "react";
-import AppHeader from "../../components/Header/AppHeader";
-import { Button } from "@mui/material";
+import { useState } from "react";
+import "rsuite/dist/rsuite.min.css";
+import { Button } from "rsuite";
+import { MetaProvider} from "pixel-streaming";
+
+
+const PixelStreaming = () => {
+    
+
+    return (
+        <>
+        </>
+    );
+};
 
 
 const StreamPage = () => {
-    const [tab, setTab] = useState("Stream");
-
-    
     return (
-        <div>
-            <AppHeader tab={tab} setTab={setTab} />
-            <Button  onClick={() => setTab("abc")}> click me </Button>
-        </div>
+        <MetaProvider>
+            <PixelStreaming />
+        </MetaProvider>
     );
 };
 
