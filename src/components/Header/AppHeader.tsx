@@ -33,10 +33,9 @@ const AppHeader = () => {
     };
 
 
-
     return (
-        <AppBar position="static">
-            <Container maxWidth="xl">
+        <AppBar position="fixed">
+            <Container maxWidth="xl" sx={{ marginRight: "0px", marginLeft: "0px", minWidth: "100%" }}>
                 <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
                     <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
                         <Typography
@@ -57,10 +56,10 @@ const AppHeader = () => {
                             {modifiedText("Place Logo Here")}
                         </Typography>
 
-                        <Box sx={{ justifyContent: "flex-start" }}>
+                        <Box sx={{ justifyContent: "flex-start", flexDirection: "column" }}>
                             {pages.map((page) => (
                                 <Button key={page} sx={{ color: "black" }} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                                    <Typography textAlign="center">{modifiedText(page)}</Typography>
                                 </Button>
                             ))}
                         </Box>

@@ -14,7 +14,7 @@ interface CardProps {
 const FeatureCard: FC<CardProps> = ({ title, text, cardAction, imgPath }) => {
 
     return (
-        <Card sx={{ maxWidth: 400 }}>
+        <Card sx={{ maxWidth: 400, borderRadius: 4, boxShadow: "" }}>
             <CardActionArea
                 onClick={cardAction}
             >
