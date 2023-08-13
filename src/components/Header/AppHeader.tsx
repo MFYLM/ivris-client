@@ -36,7 +36,7 @@ const AppHeader = () => {
 
     return (
         <AppBar position="static">
-            <Container maxWidth="xl">
+            <Container maxWidth="xl" sx={{marginLeft: "0px", marginRight: "0px", minWidth: "100%"}}>
                 <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
                     <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
                         <Typography
