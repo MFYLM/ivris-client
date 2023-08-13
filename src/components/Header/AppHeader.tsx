@@ -3,12 +3,11 @@ import { styled } from '@mui/material/styles';
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { modifiedText } from "../../utils/textHelper";
-
+import { pageToURLMap } from "../../types/pageMap";
 
 const pages = ['Home', 'About', 'Product', 'Invest', 'Future', "Contact Us"];
 const settings = ['Profile', 'Account', 'Dashboard', 'Login'];
 
-const pageToURLMap = new Map<string, string>();     // mapping page name to url
 
 
 const AppHeader = () => {
@@ -56,7 +55,7 @@ const AppHeader = () => {
                             {pages.map((page) => (
                                 <Typography 
                                     component="a"
-                                    href="/abc" 
+                                    href={pageToURLMap.get(page)}
                                     sx={{ 
                                         color: "black", 
                                         textDecoration: 'none', 

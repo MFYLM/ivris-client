@@ -1,7 +1,7 @@
 import React from "react";
-import FeatureCard from "../../components/Cards/FeatureCard";
+import FeatureCard from "../components/Cards/FeatureCard";
 import { Box, Card, CardMedia, Container, Typography } from "@mui/material";
-import ActionCard from "../../components/Cards/ActionCard";
+import ActionCard from "../components/Cards/ActionCard";
 
 
 const MainPage = () => {
