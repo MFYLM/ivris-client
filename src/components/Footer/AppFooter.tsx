@@ -13,7 +13,7 @@ const AppFooter = () => {
     const pages = ['Join Newsletter', 'Social Media', 'Blog']
     const legalInfo = ['Copyright', 'All Rights Reserved', 'Terms and Conditions', 'Privacy']
     return (
-        <AppBar sx={{position: "absolute", bottom: 0, top: 'auto'}}>
+        <AppBar sx={{ position: "relative", bottom: 0, top: "auto", boxShadow: "30px" }}>
             <Container maxWidth="xl" sx={{marginLeft: "0px", marginRight: "0px", minWidth: "100%", "marginTop": "10px"}}>
                 <Box sx={{
                     display: "flex", 

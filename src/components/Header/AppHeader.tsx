@@ -33,7 +33,7 @@ const AppHeader = () => {
         <AppBar position="fixed">
             <Container maxWidth="xl" sx={{ marginRight: "0px", marginLeft: "0px", minWidth: "100%" }}>
                 <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
-                    <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+                    <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly" }}>
                         <Typography
                             variant="h6"
                             noWrap
@@ -62,7 +62,10 @@ const AppHeader = () => {
                                         textDecoration: 'none', 
                                         width: "80px", 
                                         padding: "20px",
-                                        fontSize: 24 
+                                        fontSize: 24,
+                                        '&:hover': {
+                                            textDecoration: "None",
+                                        },
                                     }}
                                     textAlign="center"
                                 >
