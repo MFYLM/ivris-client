@@ -46,7 +46,7 @@ const MainPage = () => {
                 marginTop: "20px",
                 flexDirection: "row",
                 alignItems: "center",
-                justifyContent: "space-between",
+                justifyContent: "space-around",
                 maxWidth: "100%",
                 padding: "20px",
                 gap: "20px",

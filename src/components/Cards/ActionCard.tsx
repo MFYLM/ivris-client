@@ -14,7 +14,7 @@ interface ActionCardProps {
 const ActionCard: FC<ActionCardProps> = ({ title, buttonText, description, imgPath, onClick }) => {
 
     return (
-        <Card sx={{ maxWidth: 400, maxHeight: 200, borderRadius: "8px", boxShadow: "", background: "black" }}>
+        <Card sx={{ width: 450, height: 350, borderRadius: "8px", boxShadow: "", background: "black", padding: "20px" }}>
             <Typography variant="body2" sx={{ fontSize: 20, color: "white" }}>{title}</Typography>
             <Box sx={{ 
                 display: "flex",
@@ -35,6 +35,8 @@ const ActionCard: FC<ActionCardProps> = ({ title, buttonText, description, imgPa
                 <Box sx={{ 
                     display: "flex",
                     flexDirection: "column",
+                    justifyContent: "space-between",
+                    gap: "20px",
                 }}>
                     <CardContent>
                         <Typography variant="body2" color="text.secondary" sx={{ color: "white" }}>
