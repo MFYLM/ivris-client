@@ -5,10 +5,10 @@ import { useNavigate } from "react-router-dom";
 import { modifiedText } from "../../utils/textHelper";
 
 
-const pages = ['Home', 'About', 'Future', 'Sponsor', "Contact Us"];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['Home', 'About', 'Product', 'Invest', 'Future', "Contact Us"];
+const settings = ['Profile', 'Account', 'Dashboard', 'Login'];
 
-const pageToURLMap = new Map<string, string>();
+const pageToURLMap = new Map<string, string>();     // mapping page name to url
 
 
 const AppHeader = () => {
@@ -24,19 +24,14 @@ const AppHeader = () => {
         setAnchorElUser(event.currentTarget);
     };
 
-    const handleCloseNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorElNav(null);
-    };
-
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
     };
 
 
-
     return (
-        <AppBar position="static">
-            <Container maxWidth="xl" sx={{marginLeft: "0px", marginRight: "0px", minWidth: "100%"}}>
+        <AppBar position="fixed">
+            <Container maxWidth="xl" sx={{ marginRight: "0px", marginLeft: "0px", minWidth: "100%" }}>
                 <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
                     <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
                         <Typography
@@ -57,11 +52,22 @@ const AppHeader = () => {
                             {modifiedText("Place Logo Here")}
                         </Typography>
 
-                        <Box sx={{ justifyContent: "flex-start" }}>
+                        <Box sx={{ justifyContent: "flex-start", alignItems: "center", flexDirection: "column" }}>
                             {pages.map((page) => (
-                                <Button key={page} sx={{ color: "black" }} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
-                                </Button>
+                                <Typography 
+                                    component="a"
+                                    href="/abc" 
+                                    sx={{ 
+                                        color: "black", 
+                                        textDecoration: 'none', 
+                                        width: "80px", 
+                                        padding: "20px",
+                                        fontSize: 24 
+                                    }}
+                                    textAlign="center"
+                                >
+                                    {page}
+                                </Typography>
                             ))}
                         </Box>
                     </Box>
