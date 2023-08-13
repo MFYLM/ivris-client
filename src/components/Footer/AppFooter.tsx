@@ -13,7 +13,7 @@ const AppFooter = () => {
     const pages = ['Join Newsletter', 'Social Media', 'Blog']
     const legalInfo = ['Copyright', 'All Rights Reserved', 'Terms and Conditions', 'Privacy']
     return (
-        <AppBar sx={{position: "absolute", bottom: 0, top: 'auto'}}>
+        <AppBar sx={{position: "static", bottom: 0, top: 'auto'}}>
             <Container maxWidth="xl" sx={{marginLeft: "0px", marginRight: "0px", minWidth: "100%", "marginTop": "10px"}}>
                 <Box sx={{
                     display: "flex", 
@@ -25,9 +25,19 @@ const AppFooter = () => {
                         display: "flex"
                     }}>
                         {help.map((page) => (
-                            <Button key={page} sx={{ color: "black", justifyContent: "flex-start"}}>
-                                <Typography>{page}</Typography>
-                            </Button>
+                            <Typography 
+                                component="a"
+                                href="/abc" 
+                                sx={{ 
+                                    color: "black", 
+                                    textDecoration: 'none', 
+                                    fontSize: 20,
+                                    justifyContent: "flex-start",
+                                    padding: "5px"
+                                }}
+                            >
+                                {page}
+                            </Typography>
                         ))}
                     </Box>
                     <Box sx={{ 
@@ -36,12 +46,19 @@ const AppFooter = () => {
                         display: "flex"
                     }}>
                         {account.map((page) => (
-                            <Button key={page} sx={{ 
-                                color: "black", 
-                                justifyContent: "flex-start"
-                            }}>
-                                <Typography>{page}</Typography>
-                            </Button>
+                            <Typography 
+                                component="a"
+                                href="/abc" 
+                                sx={{ 
+                                    color: "black", 
+                                    textDecoration: 'none', 
+                                    fontSize: 20,
+                                    justifyContent: "flex-start",
+                                    padding: "5px"
+                                }}
+                            >
+                                {page}
+                            </Typography>
                         ))}
                     </Box>
                     <Box sx={{ 
@@ -50,12 +67,19 @@ const AppFooter = () => {
                         display: "flex"
                     }}>
                         {pages.map((page) => (
-                            <Button key={page} sx={{ 
-                                color: "black", 
-                                justifyContent: "flex-start"
-                            }}>
-                                <Typography>{page}</Typography>
-                            </Button>
+                            <Typography 
+                                component="a"
+                                href="/abc" 
+                                sx={{ 
+                                    color: "black", 
+                                    textDecoration: 'none', 
+                                    fontSize: 20,
+                                    justifyContent: "flex-start",
+                                    padding: "5px"
+                                }}
+                            >
+                                {page}
+                            </Typography>
                         ))}
                     </Box>
                     <Box sx={{ 
@@ -74,12 +98,19 @@ const AppFooter = () => {
                     alignItems: "center",
                 }}>
                     {legalInfo.map((page) => (
-                        <Button key={page} sx={{ 
-                            color: "black", 
-                            justifyContent: "flex-start",
-                        }}>
-                            <Typography>{page}</Typography>
-                        </Button>
+                        <Typography 
+                            component="a"
+                            href="/abc" 
+                            sx={{ 
+                                color: "black", 
+                                textDecoration: 'none', 
+                                fontSize: 18,
+                                justifyContent: "flex-start",
+                                padding: "20px"
+                            }}
+                        >
+                            {page}
+                        </Typography>
                     ))}
                 </Box>
             </Container>
