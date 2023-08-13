@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import DefaultTheme from './theme';
+import { DefaultTheme } from './theme';
 import { ThemeProvider } from '@mui/material';
 
 

@@ -3,7 +3,7 @@ import { title } from "process";
 import React, { FC } from "react";
 
 
-interface CardProps {
+interface FeatureCardProps {
     title: string,
     text: string,
     imgPath: string,
@@ -11,7 +11,7 @@ interface CardProps {
 };
 
 
-const FeatureCard: FC<CardProps> = ({ title, text, cardAction, imgPath }) => {
+const FeatureCard: FC<FeatureCardProps> = ({ title, text, cardAction, imgPath }) => {
 
     return (
         <Card sx={{ maxWidth: 400, borderRadius: 4, boxShadow: "" }}>

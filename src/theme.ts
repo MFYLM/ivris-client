@@ -1,15 +1,18 @@
-import { createTheme } from '@mui/material/styles';
-import { red, purple } from '@mui/material/colors';
+import { Theme, createTheme, makeStyles } from '@mui/material/styles';
 
 
-const DefaultTheme = createTheme({
+export const DefaultTheme = createTheme({
     // color
     palette: {
         primary: {
-            main: purple[500],
+            main: "#ffffff",
+            light: "",
+            dark: ""
         },
         secondary: {
-            main: red[500],
+            main: '#000000',
+            light: "",
+            dark: ""
         },
         text: {
             primary: "#000000",
@@ -29,4 +32,5 @@ const DefaultTheme = createTheme({
     }
 });
 
-export default DefaultTheme;
+
+
