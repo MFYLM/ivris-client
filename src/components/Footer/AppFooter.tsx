@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { modifiedText } from "../../utils/textHelper";
+import { pageToURLMap } from "../../types/pageMap";
 
 
 const AppFooter = () => {
@@ -27,7 +28,7 @@ const AppFooter = () => {
                         {help.map((page) => (
                             <Typography 
                                 component="a"
-                                href="/abc" 
+                                href={`${pageToURLMap.get(page)}`}
                                 sx={{ 
                                     color: "black", 
                                     textDecoration: 'none', 
@@ -48,7 +49,7 @@ const AppFooter = () => {
                         {account.map((page) => (
                             <Typography 
                                 component="a"
-                                href="/abc" 
+                                href={`/${page}`} 
                                 sx={{ 
                                     color: "black", 
                                     textDecoration: 'none', 
@@ -69,7 +70,7 @@ const AppFooter = () => {
                         {pages.map((page) => (
                             <Typography 
                                 component="a"
-                                href="/abc" 
+                                href={`/${page}`} 
                                 sx={{ 
                                     color: "black", 
                                     textDecoration: 'none', 
@@ -100,7 +101,7 @@ const AppFooter = () => {
                     {legalInfo.map((page) => (
                         <Typography 
                             component="a"
-                            href="/abc" 
+                            href={`/${page}`} 
                             sx={{ 
                                 color: "black", 
                                 textDecoration: 'none', 

@@ -37,7 +37,7 @@ const AppHeader = () => {
                             variant="h6"
                             noWrap
                             component="a"
-                            href="/"
+                            href="/ivris-client"
                             sx={{
                                 mr: 2,
                                 display: { xs: 'none', md: 'flex' },

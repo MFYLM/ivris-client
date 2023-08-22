@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <AppHeader />
       <Routes>
-        <Route path='/' element={<MainPage />} />
+        <Route path='/ivris-client' element={<MainPage />} />
         <Route path='/streaming' element={<StreamPage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/product' element={<ProductPage />} />
