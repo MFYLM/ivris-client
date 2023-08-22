@@ -58,10 +58,10 @@ const AppHeader = () => {
                                     href={pageToURLMap.get(page)}
                                     sx={{ 
                                         color: "black", 
-                                        textDecoration: 'none', 
+                                        textDecoration: "none", 
                                         width: "80px", 
                                         padding: "20px",
-                                        fontSize: 24 
+                                        fontSize: 24,
                                     }}
                                     textAlign="center"
                                 >
