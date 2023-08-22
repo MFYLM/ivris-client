@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ivris-client/static/css/main.7a7e98a0.css",
-    "main.js": "/ivris-client/static/js/main.fc3b458c.js",
+    "main.js": "/ivris-client/static/js/main.7b5405d0.js",
     "static/js/787.16471153.chunk.js": "/ivris-client/static/js/787.16471153.chunk.js",
     "index.html": "/ivris-client/index.html",
     "main.7a7e98a0.css.map": "/ivris-client/static/css/main.7a7e98a0.css.map",
-    "main.fc3b458c.js.map": "/ivris-client/static/js/main.fc3b458c.js.map",
+    "main.7b5405d0.js.map": "/ivris-client/static/js/main.7b5405d0.js.map",
     "787.16471153.chunk.js.map": "/ivris-client/static/js/787.16471153.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7a7e98a0.css",
-    "static/js/main.fc3b458c.js"
+    "static/js/main.7b5405d0.js"
   ]
 }
