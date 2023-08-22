@@ -17,11 +17,11 @@ function App() {
       <AppHeader />
       <Routes>
         <Route path='/ivris-client' element={<MainPage />} />
-        <Route path='/streaming' element={<StreamPage />} />
-        <Route path='/about' element={<AboutPage />} />
-        <Route path='/product' element={<ProductPage />} />
-        <Route path='/future' element={<FuturePage />} />
-        <Route path='/invest' element={<InvestPage />} />
+        <Route path='/ivris-client/streaming' element={<StreamPage />} />
+        <Route path='/ivris-client/about' element={<AboutPage />} />
+        <Route path='/ivris-client/product' element={<ProductPage />} />
+        <Route path='/ivris-client/future' element={<FuturePage />} />
+        <Route path='/ivris-client/invest' element={<InvestPage />} />
       </Routes>
       <AppFooter />
     </div>
