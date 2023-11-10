@@ -56,24 +56,24 @@ const MainPage = () => {
                 background: "black"
             }}>
                 <FeatureCard 
-                    title="green iguana"
-                    text="Allow users to navigate inside their virtual house and apartments"
+                    title="Customize"
+                    text="Transform your living space with purchasable furniture customization options that allow you to select styles to match your and create a home that's truly yours."
                     imgPath=""
                     cardAction={() => {
                         console.log("you click one of the feature!");
                     }}
                 />
                 <FeatureCard 
-                    title="green iguana"
-                    text="Allow users to navigate inside their virtual house and apartments"
+                    title="Share"
+                    text="Customize home furnishings with friends and family, so you can get their input and make informed decisions together."
                     imgPath=""
                     cardAction={() => {
                         console.log("you click one of the feature!");
                     }}
                 />
                 <FeatureCard 
-                    title="green iguana"
-                    text="Allow users to navigate inside their virtual house and apartments"
+                    title="Walk Freely"
+                    text="These customizable home furnishings can be tailored to your preferences in a walkable online environment of your home, making it simple to visualize with accurate dimensions."
                     imgPath=""
                     cardAction={() => {
                         console.log("you click one of the feature!");
@@ -93,17 +93,17 @@ const MainPage = () => {
             >
                 <ActionCard 
                     title="Product"
-                    description="blah blah blah"
-                    buttonText="Service"
+                    description="Interested in our service and want to know more? Click below to learn more."
+                    buttonText="Product"
                     imgPath=""
-                    onClick={() => console.log("go to service") }
+                    onClick={() => console.log("go to product") }
                 />
                 <ActionCard 
                     title="Invest"
-                    description="blah blah blah"
-                    buttonText="Support"
+                    description="Want to invest in the future of virtual tours and home design? Click below to learn more."
+                    buttonText="Invest"
                     imgPath=""
-                    onClick={() => console.log("go to support") }
+                    onClick={() => console.log("go to invest") }
                 />
             </Box>
         </Container>
