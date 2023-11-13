@@ -30,10 +30,9 @@ const AboutPage = () => {
                     marginLeft: "10%",
                     marginRight: "10%"
                 }}>
-                    <Typography sx={{ fontSize: 50, color: "white", fontStyle: "italic"}}>About Us</Typography>
+                    <Typography sx={{ fontSize: 50, color: "white", fontStyle: "italic"}}>Our Mission</Typography>
                     <Typography sx={{ fontSize: 30, color: "white" }}>
-                        IVRIS is focused on providing immersive 3D home tours 
-                        to give home buyers...
+                    IVRIS is on a mission to reshape the real estate industry by offering an innovative platform that empowers home buyers to personalize their dream homes in a virtual, collaborative, and immersive environment while saving realtors money
                     </Typography>
                 </Box>
                 <Box
@@ -70,9 +69,9 @@ const AboutPage = () => {
                     marginLeft: "10%"
 
                 }}>
-                    <Typography sx={{ fontSize: 50, color: "white", fontStyle: "italic"}}>Our Vision</Typography>
+                    <Typography sx={{ fontSize: 50, color: "white", fontStyle: "italic"}}>About IVRIS</Typography>
                     <Typography sx={{ fontSize: 30, color: "white" }}>
-                        Reinventing visual staging.
+                    Our journey is guided by a visionary founder who, as a Realtor in California and a student at UC Irvine, recognized the challenges of traditional home staging. This inspired the creation of a transformative service, which aims to revolutionize the real estate experience. With a commitment to providing an innovative platform that integrates. 
                     </Typography>
                 </Box>
             </Box>
@@ -87,9 +86,9 @@ const AboutPage = () => {
                     marginLeft: "10%",
                     marginRight: "10%"
                 }}>
-                    <Typography sx={{ fontSize: 50, color: "white", fontStyle: "italic"}}>Career at IVRIS</Typography>
+                    <Typography sx={{ fontSize: 50, color: "white", fontStyle: "italic"}}>Birth of idea</Typography>
                     <Typography sx={{ fontSize: 30, color: "white" }}>
-                        Developing the next generation.
+                    IVRIS was born from a critical observation:  the conventional practice of physical home staging, while effective, comes at a significant financial cost and lacks customization. After interviewing many experienced Realtors, we knew this was a burden for both agents and home buyers. This realization was made all the more clear to me while hosting an open house, when prospective buyers grappled with the challenge of visualizing the possibilities within vacant properties. IVRIS seeks to bridge this gap with an innovative solution.
                     </Typography>
                 </Box>
                 <Box
@@ -104,7 +103,7 @@ const AboutPage = () => {
                 />
             </Box>
             <Divider />
-            <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between", padding: "0px", background: "black", paddingBlock: "50px" }}>
+            {/* <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between", padding: "0px", background: "black", paddingBlock: "50px" }}>
                 <Box sx={{
                     display: "flex", 
                     flexDirection: "column", 
@@ -156,7 +155,7 @@ const AboutPage = () => {
                     />
                     <Button size="medium" sx={{backgroundColor: "darkgrey", marginTop: "10%"}}>SEND</Button>
                 </Box>
-            </Box>
+            </Box> */}
         </Container>
     );
 };
